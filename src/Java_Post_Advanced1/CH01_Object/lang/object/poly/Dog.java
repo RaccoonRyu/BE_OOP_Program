@@ -1,0 +1,8 @@
+package Java_Post_Advanced1.CH01_Object.lang.object.poly;
+
+public class Dog {
+
+    public void sound() {
+        System.out.println("멍멍");
+    }
+}
