@@ -8,7 +8,7 @@ public class ClassGradleEx3_2 {
         DiscountService discountService = new DiscountService();
 
 /*
-        Grade grade = new Grade(); //enum 생성 불가
+        Grade grade = new Grade(); //enum은 외부 생성 불가 - 컴파일 에러 발생
         int result = discountService.discount(grade, price);
         System.out.println("result price: " + result);
 */

@@ -2,7 +2,7 @@ package Java_Post_Advanced1.CH05_Enum.ex1;
 
 public class DiscountService {
 
-    //StringGrade를 참고하세요.
+    // 문자열 상수인 StringGrade 사용
     public int discount(String grade, int price) {
         int discountPercent = 0;
 

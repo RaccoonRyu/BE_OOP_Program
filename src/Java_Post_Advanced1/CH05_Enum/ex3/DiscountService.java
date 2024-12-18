@@ -5,6 +5,7 @@ public class DiscountService {
     public int discount(Grade grade, int price) {
         int discountPercent = 0;
 
+        // enum은 아래 문장을 switch로 변경할 수 있다.
         if (grade == Grade.BASIC) {
             discountPercent = 10;
         } else if (grade == Grade.GOLD) {
