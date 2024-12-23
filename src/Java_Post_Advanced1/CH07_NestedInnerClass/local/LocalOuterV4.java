@@ -2,7 +2,7 @@ package Java_Post_Advanced1.CH07_NestedInnerClass.local;
 
 import java.lang.reflect.Field;
 
-public class LocalOuterV3 {
+public class LocalOuterV4 {
     private int outInstanceVar = 3;
 
     public Printer process(int paramVar) {
@@ -27,12 +27,17 @@ public class LocalOuterV3 {
         }
         // 지역 클래스는 메서드 코드 블럭 범위 안에서만 객체를 생성할 수 있다.
         LocalPrinter printer = new LocalPrinter();
-        //printer.print(); // 여기서 호출하지 않고 Printer 인스턴스 반환
+        // 만약 localVar, paramVar의 값을 변경한다면?
+        // localVar = 10; // 컴파일 에러 발생
+        // paramVar = 10; // 컴파일 에러 발생
+        // 스택 영역에 존재하는 지역 변수의 값과 인스턴스에 캡처한 캡처 변수의 값이 달라지는 문제(동기화 문제) 발생
+        // 따라서 지역 클래스가 접근하는 지역 변수의 값은 변경하면 안된다. (final 혹은 사실상 final이어야 한다.)
+
         return printer;
     }
 
     public static void main(String[] args) {
-        LocalOuterV3 localOuter = new LocalOuterV3();
+        LocalOuterV4 localOuter = new LocalOuterV4();
         Printer printer = localOuter.process(2);
         // process() 호출하면 지역 클래스 LocalPrinter의 인스턴스가 생성되고 printData() 호출됨
 
