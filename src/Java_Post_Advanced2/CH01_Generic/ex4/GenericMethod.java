@@ -10,6 +10,7 @@ public class GenericMethod {
         return obj;
     }
 
+    // 특정 타입을 받아서 그 타입 그대로 반환하는 메서드
     // 제네릭 메서드 정의 시 메서드 반환 타입 왼쪽에 다이아몬드(<T>) 사용하여 타입 매개변수를 기재
     // 해당 메서드를 실제 호출하는 시점에 다이아몬드를 사용해서 <Integer>와 같이 타입을 정하고 호출
     public static <T> T genericMethod(T t) {
@@ -17,6 +18,7 @@ public class GenericMethod {
         return t;
     }
 
+    // 제네릭 메서드에도 타입 매개변수 상한을 사용할 수 있다.
     public static <T extends Number> T numberMethod(T t) {
         System.out.println("bound print = " + t);
         return t;
