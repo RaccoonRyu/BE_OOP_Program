@@ -19,6 +19,10 @@ public class WildCardMain1 {
         WildCardEx.printWildCardV2(dogBox);
 
         Dog dog = WildCardEx.printAndReturn(dogBox);
+
+        catBox.set(new Cat("냐옹이", 200));
+        Cat cat = WildCardEx.printAndReturn(catBox);
+
         Animal animal = WildCardEx.printAndReturnWildcard(dogBox); // printAndReturnWildcard 함수의 반환 타입이 Animal이기 때문에 Animal로 받음
     }
 }
