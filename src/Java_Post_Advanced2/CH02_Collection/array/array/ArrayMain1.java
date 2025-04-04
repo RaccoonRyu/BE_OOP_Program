@@ -1,4 +1,4 @@
-package Java_Post_Advanced2.CH02_Collection.array;
+package Java_Post_Advanced2.CH02_Collection.array.array;
 
 import java.util.Arrays;
 
