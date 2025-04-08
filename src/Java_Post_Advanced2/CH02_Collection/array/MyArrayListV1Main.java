@@ -1,4 +1,4 @@
-package Java_Post_Advanced2.CH02_Collection.array.array;
+package Java_Post_Advanced2.CH02_Collection.array;
 
 public class MyArrayListV1Main {
     public static void main(String[] args) {
