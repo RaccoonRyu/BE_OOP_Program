@@ -34,4 +34,8 @@ public class JavaIterableMain {
         forEach(intSet);
         
     }
+
+    // 순회의 목적을 가진 어떤 특정 자료구조를 Iterable을 구현하여 작성했다면
+    // 이 특정 자료구조를 순회할 반복자 또한 Iterator를 구현하여 만들어야 하는것이고,
+    // 이는 반복자 디자인 패턴의 범주에 속한다.
 }
